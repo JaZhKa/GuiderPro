@@ -1,0 +1,15 @@
+.sorts-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.sorts-container > span {
+  font-size: 1rem;
+  color: var(--text);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.sorts-container > span:hover {
+  opacity: 1;
+}

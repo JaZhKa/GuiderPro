@@ -1,0 +1,27 @@
+.filters-container {
+  background-color: var(--primary);
+  color: var(--text);
+  border-radius: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.filters__tags-wrap {
+  display: flex;
+  gap: 2rem;
+}
+
+.reset-button {
+  border: none;
+  background-color: transparent;
+  color: var(--text);
+  font-size: 1rem;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  opacity: 1;
+}
