@@ -1,7 +1,7 @@
 import './Card.css';
 import Tag from './../tag/Tag';
 
-function Card({ book }) {
+function Card({ book, selectTags, setSelectTags }) {
   return (
     <div className='card-container'>
       <h3>
@@ -13,7 +13,7 @@ function Card({ book }) {
       <hr />
       <div className='tags-wrap'>
         {book.tags.map((tag) => (
-          <Tag key={tag} tag={tag} />
+          <Tag key={tag} tag={tag} selectTags={selectTags} setSelectTags={setSelectTags} />
         ))}
       </div>
     </div>

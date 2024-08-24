@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 export const useGetData = () => {
-  const [books, setBooks] = useState([]);
+  const [allBooks, setAllBooks] = useState([]);
   const [error, setError] = useState(null);
 
-  const getBooks = async () => {
+  const getAllBooks = async () => {
     await fetch('http://localhost:9000/')
       .catch((error) => {
         setError(error);
@@ -12,13 +12,13 @@ export const useGetData = () => {
       })
       .then((response) => response.json())
       .then((json) => {
-        setBooks(json);
+        setAllBooks(json);
       });
   };
 
   return {
-    books,
+    allBooks,
     error,
-    getBooks,
+    getAllBooks,
   };
 };
