@@ -23,6 +23,7 @@ function App() {
 
   useEffect(() => {
     getAllBooks();
+    localStorage.setItem('tags', JSON.stringify(tags));
     filterBooksByTags(selectTags, allBooks);
   }, []);
 
@@ -30,7 +31,7 @@ function App() {
     setTags(selectTags);
     filterBooksByTags(selectTags, allBooks);
   }, [selectTags]);
-  
+
   useEffect(() => {
     document.addEventListener('click', handleOutsideClick);
     return () => {
@@ -48,7 +49,11 @@ function App() {
         selectTags={selectTags}
         setSelectTags={setSelectTags}
       />
-      <Books books={books} selectTags={selectTags} setSelectTags={setSelectTags} />
+      <Books
+        books={books}
+        selectTags={selectTags}
+        setSelectTags={setSelectTags}
+      />
     </div>
   );
 }
