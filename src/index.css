@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
-  color: var(--background);
+  background-color: var(--background);
+  padding: 2rem;
 }
 
 code {
@@ -25,4 +25,16 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    font-size: 55.5%;
+  }
 }

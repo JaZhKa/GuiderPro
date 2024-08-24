@@ -1,0 +1,9 @@
+.books-container {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 3.2rem;
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

@@ -1,0 +1,23 @@
+.card-container {
+  background-color: var(--secondary);
+  padding: 3.2rem;
+  border-radius: 3.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+p, span {
+  font-size: 1.2rem; 
+}
+
+hr {
+  margin: 2.6rem 0 .8rem 0;
+}
+
+.tags-wrap {
+  display: flex;
+  gap: 1rem;
+}

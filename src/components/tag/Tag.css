@@ -1,0 +1,18 @@
+.tag-btn {
+  background-color: var(--text);
+  color: #333;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 3.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tag-btn:hover,
+.tag-btn:focus,
+.tag-btn:active {
+  background-color: var(--secondary);
+  color: var(--text);
+  outline: 0.2rem solid var(--text);
+}
