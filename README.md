@@ -1,3 +1,16 @@
+Леменков Яков
+
+Тестовое задание для Frontend-разработчика
+
+Проект выполнено при помощи React. На главной странице отображаются данные о книгах полученные с помощю fetch из db.json.
+Реализованы функции фильтрации и сортировки данных. Параметры фильтрации сохраняются в localStorage. Кнопка reset rules очищает фильтр.
+
+Репозиторий github:
+https://github.com/JaZhKa/GuiderPro
+
+Разветнутое приложение:
+https://66caf30af02c1bd9fb16b87d--shiny-halva-28698e.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
