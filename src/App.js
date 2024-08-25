@@ -10,7 +10,7 @@ import { useSort } from './hooks/useSort';
 function App() {
   const { allBooks, getAllBooks } = useGetData();
   const { books, setBooks, filterBooksByTags } = useFilter();
-  const { sortBy, setSortBy, sortBooks } = useSort();
+  const { sortBy, setSortBy, sortBooks, sortOrders, setSortOrders } = useSort();
   const [isActive, setIsActive] = useState(false);
   const [tags, setTags] = useState([]);
   const [selectTags, setSelectTags] = useState([]);
@@ -25,15 +25,16 @@ function App() {
   };
 
   useEffect(() => {
+    const storedTags = localStorage.getItem('tags');
+    if (storedTags) {
+      setSelectTags(JSON.parse(storedTags));
+    }
     getAllBooks();
-    localStorage.setItem('tags', JSON.stringify(tags));
-    filterBooksByTags(selectTags, allBooks);
   }, []);
 
   useEffect(() => {
-    setTags(selectTags);
     filterBooksByTags(selectTags, allBooks);
-  }, [selectTags]);
+  }, [selectTags, allBooks]);
 
   useEffect(() => {
     const sortedBooks = sortBooks(books, sortBy, sortOrder);
