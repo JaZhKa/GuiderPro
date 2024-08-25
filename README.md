@@ -9,7 +9,7 @@
 https://github.com/JaZhKa/GuiderPro
 
 Разветнутое приложение:
-https://66caf30af02c1bd9fb16b87d--shiny-halva-28698e.netlify.app/
+https://66caf797268038d6878e0b38--tangerine-pixie-f133dd.netlify.app/
 
 # Getting Started with Create React App
 
