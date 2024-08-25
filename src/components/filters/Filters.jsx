@@ -8,6 +8,8 @@ function Filters({
   isActive,
   selectTags,
   setSelectTags,
+  setSortBy,
+  setSortOrder,
 }) {
   const handleReset = () => {
     setSelectTags([]);
@@ -16,7 +18,7 @@ function Filters({
 
   return (
     <div className='filters-container'>
-      <Sorts />
+      <Sorts setSortBy={setSortBy} setSortOrder={setSortOrder} />
       <div className='filters__tags-wrap'>
         <Tags
           allBooks={allBooks}

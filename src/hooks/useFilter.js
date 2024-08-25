@@ -17,6 +17,7 @@ export const useFilter = () => {
 
   return {
     books,
+    setBooks,
     selectedTags,
     filterBooksByTags,
   };

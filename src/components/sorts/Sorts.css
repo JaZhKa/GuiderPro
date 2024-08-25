@@ -10,6 +10,6 @@
   cursor: pointer;
 }
 
-.sorts-container > span:hover {
+.sorts-container > span.active, .sorts-container > span:hover {
   opacity: 1;
 }
